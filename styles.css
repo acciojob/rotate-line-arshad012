@@ -1,1 +1,38 @@
 /*  your css code here. If applicable */
+#screen {
+	width: 300px;
+	height: 300px;
+	border: 1px dashed;
+	margin: auto;
+	/* position: relative; */
+	display: grid;
+	place-content:center;
+}
+#line {
+	color: black;
+	width: 200px;
+	height: 2px;
+	background-color: black;
+	/* position: absolute; */
+	/* top: 50%; */
+	/* left: 50%; */
+	/* transform: translate(-50%, -50%); */
+}
+
+.animation {
+	animation: 4s linear 0s infinite rotate;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+/* .animation {
+	animation: rotate 3s linear infinite;
+} */
+
+
